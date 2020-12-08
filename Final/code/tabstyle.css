@@ -1,0 +1,64 @@
+
+.definitiontab{
+    
+    background-color:#262626;
+    display:none;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns: 20px 1fr 1fr 1fr 1fr 1fr;
+    font-family: houschka-rounded;
+    width:850px;
+    height:400px;
+    border:solid black 1px;
+    border-radius:20px;
+      grid-template-areas: 
+      "space header header header header header"
+      "space detail detail detail detail detail"
+      "space btn btn btn btn btn";
+    box-shadow:2px 2px 2px black;
+    position:relative;
+    z-index:15;
+  }
+  .headmsg{
+    color:#ffffff;
+    grid-area:header;
+    font-size:70px;
+    font-weight:600;
+  }
+  .detaildescription{
+    grid-area:detail;
+    display:grid;
+    grid-template-rows:repeat(3,auto);
+    grid-template-columns:repeat(15,1fr);
+  }
+  .wordbutton{
+    grid-area:btn;
+    display:grid;
+    grid-template-rows:repeat(3,1fr);
+    grid-template-columns:repeat(5,1fr);
+    justify-items:stretch;
+    align-items:center;
+    text-align:center;
+    justify-content: space-evenly; 
+  }
+  
+  .noun{
+    color:#ffffff;
+    font-size:30px;
+    font-style:italic;
+    grid-column:1 / 2;
+    grid-row:1/2;
+  }
+  .def{
+    color:#ffffff;
+    font-size:30px;
+    grid-column:3/-1;
+    grid-row:1/2;
+  }
+  .words{
+    background-color:#FFFFFF;
+    font-size:20px;
+    font-weight:bold;
+    width:80%;
+    color:black;
+    border-radius:10px;
+  }
